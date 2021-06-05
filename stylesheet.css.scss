@@ -1,0 +1,225 @@
+body {
+  background-image: url(https://cdn3.f-cdn.com/contestentries/1489974/18545046/5cba2aba229c4_thumb900.jpg);
+  background-color: #c7c7c7e8;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  text-align: left;
+  position: absolute;
+  margin: 3ex;
+  padding: 0;
+}
+
+h1, h2 {
+  color: white;
+}
+
+#general-container {
+  height: 100%;
+  width: 100%;
+}
+
+#grid-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+  grid-gap: 20px;
+}
+
+#left-container {
+ grid-area: left;
+ width: 40rem;
+}
+
+#right-container {
+  grid-area: right;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+          "top"
+          "bottom";
+  grid-gap: 0px;
+}
+
+#right-top-container {
+  grid-area: top;
+}
+
+#right-bottom-container {
+  grid-area: bottom;
+}
+
+#card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1ex;
+}
+
+#card-hint-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1ex;
+  width: 10em;
+  margin-left: 2em;
+}
+
+#rules-container {
+  height: 90%;
+  width: 90%;
+  padding: 1ex 1em 1ex 1em;
+  background-color: lightgray;
+}
+
+#msg-container {
+  height: 8ex;
+  width: 30em;
+  //background-color: lightgray;
+  padding: 1ex 1em 1ex 1em;
+  margin-left: 2em;
+  margin-top: 5ex;
+}
+
+.button {
+  background-color: grey;
+  height: 4ex;
+  width: 8em;
+  border-radius: 5%;
+  margin: 5ex 2em 5ex 2em;
+}
+
+.start-button {
+  background-color: rgb(151,190,73);
+  margin-right: 1em;
+}
+
+.highscore-button {
+  background-color: rgb(61,156,204);
+}
+
+.hint-button {
+  background-color: rgb(245, 164, 57);
+}
+
+.quit-button {
+  background-color: rgb(201,73,44);
+}
+
+.rules-button {
+  background-color: rgb(41,175,140);
+  margin: 5ex 3ex 5ex 1em
+}
+
+#message {
+  font-size: 14pt;
+}
+
+.scoreboard {
+  display: block;
+  background-color: rgb(61,156,204);//rgb(21, 21, 87);
+  color: white;
+  height: 20ex;
+  width: 30em;
+  margin-left: 2em;
+  padding-left: 2em;
+}
+
+.card {
+  background-color: white;
+  height: 24ex;
+  width: 18ex;
+  border-radius: 5%;
+  padding: 0;
+}
+
+.highscore-table {
+  border-collapse: collapse;
+  border: solid;
+  border-width: 2px;
+}
+
+th {
+  padding: 1rem;
+  background-color: rgb(61,156,204);
+  text-align: left;
+}
+
+td {
+  padding: 1rem;
+}
+
+tr:nth-child(even) {
+  background-color: darkgrey;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+
+.green {
+  background-color: rgb(151,190,73);
+  border: 2px solid rgb(151,190,73);
+}
+
+.red {
+  background-color: rgb(201,73,44);
+  border: 2px solid rgb(201,73,44);
+}
+
+.purple {
+  background-color:rgb(124,96,198);
+  border: 2px solid rgb(124,96,198);
+}
+
+.square {
+  height: 4ex;
+  width: 4ex;
+  margin: 1ex 7ex;
+}
+
+.circle {
+  height: 4ex;
+  width: 4ex;
+  border-radius: 50%;
+  margin: 1ex 7ex;
+}
+
+.parallelogram {
+  width: 8ex;
+	height: 4ex;
+  transform: skew(20deg);
+  margin: 1ex 5ex;
+}
+
+.shaded {
+  opacity: .4;
+}
+
+.open {
+  background-color: white;
+}
+
+.selected {
+  background-color: #efff92;
+}
+
+.error {
+  background-color: rgb(241, 70, 70);
+}
+
+.success {
+  background-color: rgb(95, 214, 95);
+}
+
+#rules {
+  font-size: 16pt;
+}
+
+.scoreboard h1 {
+  margin: 0;
+  padding-top: 2ex;
+}
